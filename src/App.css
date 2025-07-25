@@ -1,38 +1,15 @@
-.App {
-  text-align: center;
+.App{
+    background-color: #282C34 !important;
+    min-height: 100vh;
+    text-align: center; /* 기존에 있던 다른 스타일은 유지 */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .main {
+  /* 원하는 만큼 픽셀 값을 조절하세요 */
+  /* Flexbox를 사용해 내용물을 정렬합니다. */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  flex-direction: column; /* 아이템을 세로로 쌓음 (시계, 그 아래 캘린더) */
+  align-items: center;   /* 아이템을 가로축 기준 가운데로 정렬 */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* 이전에 추가했던 margin-top은 그대로 유지하셔도 됩니다. */
+    margin-top: 200px;
 }
